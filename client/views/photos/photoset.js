@@ -1,4 +1,4 @@
-Template.photosList.helpers({
+Template.photoset.helpers({
   photos: function () {
     return Photoset.find();
   }
