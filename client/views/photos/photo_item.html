@@ -1,0 +1,14 @@
+<template name="photoItem">
+  <div class="photo">
+    <a class='image'
+       style='background-image: url("{{thumbnail_image_url}}")'
+       data-thumbnail-image-url='{{thumbnail_image_url}}'
+       data-original-image-url='{{original_image_url}}'
+       data-permalink='{{permalink}}'
+       data-photo-id='{{photo_id}}'
+       data-title='{{title}}'
+       href='/photo/{{photo_id}}'>
+       Photo: {{title}}
+    </a>
+  </div>
+</template>
