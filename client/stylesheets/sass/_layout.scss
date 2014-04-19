@@ -1,0 +1,23 @@
+.outer-container {
+  @include outer-container;
+}
+
+.column {
+  @include span-columns(2 of 4);
+
+  @include media($medium-breakpoint) {
+    @include span-columns(4 of 12);
+  }
+
+  @include media($large-breakpoint) {
+    @include span-columns(3 of 12);
+  }
+}
+
+.full-width {
+  @include span-columns(4 of 4);
+
+  @include media($medium-breakpoint) {
+    @include span-columns(12 of 12);
+  }
+}

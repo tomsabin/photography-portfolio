@@ -2,10 +2,14 @@
 
 // Change the grid settings
 $column: 90px;
-$gutter: 30px;
-$grid-columns: 10;
-$max-width: em(1088);
+$gutter: 0px;
+$grid-columns: 4;
+$max-width: 960px;
 
 // Define your breakpoints
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+$medium-breakpoint: new-breakpoint(min-width em(600) 12);
+$large-breakpoint: new-breakpoint(min-width em(960) 12);
+
+// Guidelines
+$visual-grid: true; // Override to show the vertical columns
+$visual-grid-index: 500; // Ensures that the grid is (mostly) on top
