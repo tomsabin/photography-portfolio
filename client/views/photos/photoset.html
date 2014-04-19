@@ -1,5 +1,5 @@
-<template name="photoset">
-  <div class="photos">
+<template name='photoset'>
+  <div class='photos'>
     {{#each photoset}}
       {{> photosetPhoto}}
     {{/each}}
@@ -7,6 +7,6 @@
   </div>
 
   {{#if nextPath}}
-    <a class="load-more" href="{{nextPath}}">Load more</a>
+    <a class='load-more' href='{{nextPath}}'>Load more</a>
   {{/if}}
 </template>

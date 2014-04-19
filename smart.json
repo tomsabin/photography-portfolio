@@ -1,7 +1,6 @@
 {
   "packages": {
     "iron-router": {},
-    "spin": {},
     "iron-router-progress": {}
   }
 }
