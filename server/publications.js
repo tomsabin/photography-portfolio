@@ -1,3 +1,3 @@
-Meteor.publish('photoset', function () {
-  return Photoset.find();
+Meteor.publish('photoset', function (limit) {
+  return Photoset.find({}, {limit: limit});
 });

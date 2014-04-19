@@ -1,7 +1,11 @@
 <template name="photoset">
   <div class="photos">
-    {{#each photos}}
+    {{#each photoset}}
       {{> photosetPhoto}}
     {{/each}}
   </div>
+
+  {{#if nextPath}}
+    <a class="load-more" href="{{nextPath}}">Load more</a>
+  {{/if}}
 </template>
