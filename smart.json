@@ -1,6 +1,9 @@
 {
   "packages": {
     "iron-router": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "scss": {},
+    "bourbon": {},
+    "neat": {}
   }
 }
