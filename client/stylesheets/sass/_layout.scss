@@ -31,9 +31,9 @@ body {
   }
 }
 
-hr {
-  clear: both;
-  border: none;
+.section:before {
+  @extend .full-width;
+  content: "";
   @include opacity-25;
   border-bottom: 1px dashed $dark-blue;
 
