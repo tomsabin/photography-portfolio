@@ -3,5 +3,5 @@ Meteor.publish('photoset', function (limit) {
 });
 
 Meteor.publish('photo', function (id) {
-  return id && Photoset.find(id);
+  return id && Photoset.find({ flickr_id: id });
 });

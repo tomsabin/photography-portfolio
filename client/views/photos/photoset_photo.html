@@ -1,5 +1,5 @@
 <template name='photosetPhoto'>
-  <a id='{{flickr_id}}' class='photoset-photo-container column' href='/photo/{{_id._str}}'>
+  <a id='{{flickr_id}}' class='photoset-photo-container column' href="{{pathFor 'photo' _id=this.flickr_id}}">
     <div class='photo' style='background-image: url("{{thumbnail_image_url}}")'>
       <div class='photo-title-container'>
         <span class='photo-title'>
