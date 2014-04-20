@@ -1,15 +1,13 @@
 <template name='photosetPhoto'>
-  <div class='photo column'>
-    <a id='{{flickr_id}}'
-       class='image'
-       style='background-image: url("{{thumbnail_image_url}}")'
-       data-thumbnail-image-url='{{thumbnail_image_url}}'
-       data-original-image-url='{{original_image_url}}'
-       data-permalink='{{permalink}}'
-       data-photo-id='{{photo_id}}'
-       data-title='{{title}}'
-       href='/photo/{{_id._str}}'>
-       Photo: {{title}}
-    </a>
-  </div>
+  <a id='{{flickr_id}}' class='photo-container column' href='/photo/{{_id._str}}'>
+    <div class='photo' style='background-image: url("{{thumbnail_image_url}}")'>
+      <div class='photo-title-container'>
+        <span class='photo-title'>
+          <div class='photo-title-highlight'>
+            {{title}}
+          </div>
+        </span>
+      </div>
+    </div>
+  </a>
 </template>

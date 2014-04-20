@@ -7,9 +7,9 @@ $grid-columns: 4;
 $max-width: 960px;
 
 // Define your breakpoints
-$medium-breakpoint: new-breakpoint(min-width em(600) 12);
-$large-breakpoint: new-breakpoint(min-width em(960) 12);
+$medium-breakpoint: new-breakpoint(min-width em(560) 12);
+$large-breakpoint: new-breakpoint(min-width em(800) 12);
 
 // Guidelines
-$visual-grid: true; // Override to show the vertical columns
+$visual-grid: false; // Override to show the vertical columns
 $visual-grid-index: 500; // Ensures that the grid is (mostly) on top

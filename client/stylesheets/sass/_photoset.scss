@@ -1,8 +1,63 @@
-.image {
-  transition: all 200ms 0ms ease-in;
-  opacity: 0;
-}
+.photos {
+  .photo-container {
+    background-color: $light-blue;
+    position: relative;
+    overflow: hidden;
 
-.loaded {
-  opacity: 1;
+    transition: all 200ms 0ms ease-in;
+    @include opacity-0;
+  }
+
+  .photo-container:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  .loaded {
+    @include opacity-100;
+  }
+
+  .photo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &:hover {
+      .photo-title-container {
+        @include opacity-100;
+      }
+    }
+  }
+
+  .photo-title-container {
+    transition: all 150ms 0ms ease-in;
+    @include opacity-0;
+
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 15%;
+  }
+
+  .photo-title-highlight {
+    @include opacity-75;
+    background-color: $dark-blue;
+    padding: 8px 0;
+  }
 }

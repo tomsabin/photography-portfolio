@@ -4,8 +4,8 @@
 http_path = "/"
 css_dir = "client/stylesheets/css"
 sass_dir = "client/stylesheets/sass"
-images_dir = "images"
 javascripts_dir = "javascripts"
+images_dir = "client/images"
 add_import_path "packages"
 
 # You can select your preferred output style here (can be overridden via the command line):
