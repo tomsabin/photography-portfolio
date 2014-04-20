@@ -228,29 +228,20 @@ p,
   margin: 40px 0;
 }
 
-/* line 5, ../sass/_photoset.scss */
-.introduction {
+/* line 6, ../sass/_photoset.scss */
+.introduction,
+.website-introduction {
   margin: 0 40px;
 }
 @media screen and (min-width: 35em) {
-  /* line 5, ../sass/_photoset.scss */
-  .introduction {
+  /* line 6, ../sass/_photoset.scss */
+  .introduction,
+  .website-introduction {
     margin: 0 80px;
   }
 }
 
-/* line 12, ../sass/_photoset.scss */
-.website-introduction {
-  margin: 0 60px;
-}
-@media screen and (min-width: 35em) {
-  /* line 12, ../sass/_photoset.scss */
-  .website-introduction {
-    margin: 0 120px;
-  }
-}
-
-/* line 20, ../sass/_photoset.scss */
+/* line 14, ../sass/_photoset.scss */
 .photos .photoset-photo-container {
   background-color: #80b7d8;
   position: relative;
@@ -262,13 +253,13 @@ p,
   -moz-opacity: 0;
   opacity: 0;
 }
-/* line 29, ../sass/_photoset.scss */
+/* line 23, ../sass/_photoset.scss */
 .photos .photoset-photo-container:before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-/* line 35, ../sass/_photoset.scss */
+/* line 29, ../sass/_photoset.scss */
 .photos .loaded {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -276,7 +267,7 @@ p,
   -moz-opacity: 1;
   opacity: 1;
 }
-/* line 39, ../sass/_photoset.scss */
+/* line 33, ../sass/_photoset.scss */
 .photos .photo {
   background-position: center center;
   background-repeat: no-repeat;
@@ -290,7 +281,7 @@ p,
   left: 0;
   top: 0;
 }
-/* line 46, ../sass/_photoset.scss */
+/* line 40, ../sass/_photoset.scss */
 .photos .photo:hover .photo-title-container {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -298,7 +289,7 @@ p,
   -moz-opacity: 1;
   opacity: 1;
 }
-/* line 52, ../sass/_photoset.scss */
+/* line 46, ../sass/_photoset.scss */
 .photos .photo-title-container {
   transition: all 150ms 0ms ease-in;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -310,14 +301,14 @@ p,
   width: 100%;
   height: 100%;
 }
-/* line 61, ../sass/_photoset.scss */
+/* line 55, ../sass/_photoset.scss */
 .photos .photo-title {
   display: table-cell;
   text-align: center;
   vertical-align: bottom;
   padding-bottom: 15%;
 }
-/* line 68, ../sass/_photoset.scss */
+/* line 62, ../sass/_photoset.scss */
 .photos .photo-title-highlight {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   filter: alpha(opacity=75);
@@ -328,7 +319,7 @@ p,
   padding: 8px 0;
 }
 
-/* line 75, ../sass/_photoset.scss */
+/* line 69, ../sass/_photoset.scss */
 .load-more {
   background-color: #80b7d8;
   margin-bottom: 40px;
@@ -340,7 +331,7 @@ p,
   text-align: center;
   color: #2a3c46;
 }
-/* line 87, ../sass/_photoset.scss */
+/* line 81, ../sass/_photoset.scss */
 .load-more:hover {
   background-color: #2a3c46;
   -webkit-transition: .2s;

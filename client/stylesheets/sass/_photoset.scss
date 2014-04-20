@@ -2,17 +2,11 @@
   margin: 40px 0;
 }
 
-.introduction {
+.introduction,
+.website-introduction {
   margin: 0 40px;
   @include media($medium-breakpoint) {
     margin: 0 80px;
-  }
-}
-
-.website-introduction {
-  margin: 0 60px;
-  @include media($medium-breakpoint) {
-    margin: 0 120px;
   }
 }
 
