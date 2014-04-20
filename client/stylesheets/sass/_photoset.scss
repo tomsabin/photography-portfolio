@@ -21,10 +21,7 @@
   .photo {
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+    @include background-cover;
 
     position: absolute;
     top: 0;

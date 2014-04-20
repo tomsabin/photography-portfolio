@@ -1,13 +1,10 @@
 body {
-  background-image: image-url('background.jpg');
+  background-image: url('images/background.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  @include background-cover;
 }
 
 .outer-container {
