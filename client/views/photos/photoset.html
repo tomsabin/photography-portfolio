@@ -1,28 +1,30 @@
 <template name='photoset'>
-  <div class='page-title'>
-    <h1>tom<span class='bold'>sabin</span></h1>
+  <div class='outer-container'>
+    <div class='page-title'>
+      <h1>tom<span class='bold'>sabin</span></h1>
+    </div>
+
+    <h2 class='introduction'>Web Developer at <a class='link' href='http://unboxedconsulting.com'>Unboxed Consulting</a>. Passionate about photography and keen to climb anything: once born a monkey.</h2>
+
+    <hr>
+
+    <p class='website-introduction'>Welcome to my personal website. Here you'll find some of my own photographs from my <a class='link' href='https://www.flickr.com/people/tom-sabin/'>Flickr</a> account. The site was created with love in <a class='link' href='https://www.meteor.com'>Meteor</a> &ndash; the source code can be viewed <a class='link' href='https://github.com/tomsabin/photography-portfolio'>here</a> if it interests you. It's hosted by <a class='link' href='http://www.heroku.com/'>Heroku</a>, too. Otherwise please enjoy the following handful of photographs.</p>
+
+    <hr>
+
+    <div class='photos'>
+      {{#each photoset}}
+        {{> photosetPhoto}}
+      {{/each}}
+      {{fadeIn}}
+    </div>
+
+    {{#if nextPath}}
+      <a class='load-more full-width' href='{{nextPath}}'>Load more</a>
+    {{/if}}
+
+    <hr>
+
+    {{> social}}
   </div>
-
-  <h2 class='introduction'>Web Developer at <a class='link' href='http://unboxedconsulting.com'>Unboxed Consulting</a>. Passionate about photography and keen to climb anything: once born a monkey.</h2>
-
-  <hr>
-
-  <p class='website-introduction'>Welcome to my personal website. Here you'll find some of my own photographs from my <a class='link' href='https://www.flickr.com/people/tom-sabin/'>Flickr</a> account. The site was created with love in <a class='link' href='https://www.meteor.com'>Meteor</a> &ndash; the source code can be viewed <a class='link' href='https://github.com/tomsabin/photography-portfolio'>here</a> if it interests you. It's hosted by <a class='link' href='http://www.heroku.com/'>Heroku</a>, too. Otherwise please enjoy the following handful of photographs.</p>
-
-  <hr>
-
-  <div class='photos'>
-    {{#each photoset}}
-      {{> photosetPhoto}}
-    {{/each}}
-    {{fadeIn}}
-  </div>
-
-  {{#if nextPath}}
-    <a class='load-more full-width' href='{{nextPath}}'>Load more</a>
-  {{/if}}
-
-  <hr>
-
-  {{> social}}
 </template>
