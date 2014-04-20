@@ -1,0 +1,103 @@
+.photo-blur {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $light-blue;
+  @include background-cover;
+  @include absolute-full-screen;
+  @include opacity-50;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-filter: blur(80px);
+  -ms-filter: blur(80px);
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.photo-container {
+  @include outer-container;
+  padding: 20px;
+
+  @include media($medium-breakpoint) {
+    padding: 30px;
+  }
+
+  @include media($large-breakpoint) {
+    padding: 40px;
+  }
+
+  .photo {
+    @include span-columns(4 of 4);
+    margin-bottom: 4px;
+    margin-top: 20px;
+
+    @include media($medium-breakpoint) {
+      @include span-columns(12 of 12);
+      margin-bottom: -4px;
+      margin-top: 30px;
+      padding: 4px;
+    }
+
+    @include media($large-breakpoint) {
+      margin-top: 80px;
+    }
+  }
+
+  .photo-additional {
+    min-height: 64px;
+    clear: left;
+
+    @include media($medium-breakpoint) {
+      border-spacing: 4px;
+      border-collapse: separate;
+      border-right: none;
+      border-left: none;
+      display: table;
+      width: 100%;
+      clear: none;
+    }
+  }
+
+  .photo-title {
+    float: left;
+    background-color: $light-blue;
+    margin-bottom: 4px;
+    padding: 8px;
+    width: 100%;
+
+    @include media($medium-breakpoint) {
+      vertical-align: middle;
+      text-align: left;
+      font-size: 1.2em;
+      margin-bottom: 0;
+      padding: 0 12px;
+      display: table-cell;
+      float: none;
+      width: auto;
+    }
+  }
+
+  .view-on-flickr,
+  .close-photo {
+    @include icon;
+    float: right;
+    clear: left;
+    margin-left: 4px;
+
+    @include media($medium-breakpoint) {
+      margin-left: 0;
+      display: table-cell;
+      clear: none;
+      float: none;
+    }
+  }
+
+  .view-on-flickr {
+    background-image: url('images/social-flickr.png');
+  }
+
+  .close-photo {
+    background-image: url('images/back-button.png');
+  }
+}

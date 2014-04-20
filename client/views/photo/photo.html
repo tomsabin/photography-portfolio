@@ -1,6 +1,17 @@
 <template name='photo'>
-  <img src='{{original_image_url}}' alt='{{title}}' />
-  {{title}}
-  <a href='{{permalink}}'>View this on Flickr</a>
-  <a href='{{closePhoto}}'>Close</a>
+  <div class='photo-blur' style='background-image: url("{{thumbnail_image_url}}");'></div>
+  <div class='photo-container'>
+    <img class='photo' src='{{original_image_url}}' alt='{{title}}' />
+    <div class='photo-additional'>
+      <span class='photo-title'>{{title}}</span>
+      <a class='view-on-flickr' href='{{permalink}}' title='View this on Flickr'></a>
+      <a class='close-photo' href='{{closePhoto}}' title='Close photo'></a>
+    </div>
+  </div>
+
+  <svg:svg>
+    <svg:filter id="photo-blur">
+      <svg:feGaussianBlur stdDeviation="5"/>
+    </svg:filter>
+  </svg:svg>
 </template>

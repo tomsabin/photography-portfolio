@@ -12,15 +12,7 @@
   }
 
   .social-icon {
-    background-color: $light-blue;
-    display: inline-block;
-    height: 64px;
-    width: 64px;
-
-    &:hover {
-      background-color: $dark-blue;
-      @include hover-transition;
-    }
+    @include icon;
   }
 
   .linkedin {

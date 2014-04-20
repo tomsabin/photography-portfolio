@@ -14,6 +14,14 @@
   opacity: 0.75;
 }
 
+@mixin opacity-50 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -khtml-opacity: 0.5;
+  -moz-opacity:0.5;
+  opacity: 0.5;
+}
+
 @mixin opacity-25 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
   filter: alpha(opacity=25);
@@ -43,4 +51,24 @@
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+}
+
+@mixin absolute-full-screen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+@mixin icon {
+  background-color: $light-blue;
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+
+  &:hover {
+    background-color: $dark-blue;
+    @include hover-transition;
+  }
 }

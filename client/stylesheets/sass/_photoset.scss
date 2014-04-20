@@ -17,7 +17,7 @@
 }
 
 .photos {
-  .photo-container {
+  .photoset-photo-container {
     background-color: $light-blue;
     position: relative;
     overflow: hidden;
@@ -26,7 +26,7 @@
     @include opacity-0;
   }
 
-  .photo-container:before {
+  .photoset-photo-container:before {
     content: '';
     display: block;
     padding-top: 100%;
@@ -40,12 +40,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     @include background-cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    @include absolute-full-screen;
 
     &:hover {
       .photo-title-container {
