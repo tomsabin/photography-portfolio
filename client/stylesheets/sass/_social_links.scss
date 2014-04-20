@@ -1,0 +1,53 @@
+.social {
+  margin-bottom: 40px;
+  @include media($medium-breakpoint) {
+    margin-bottom: 80px;
+  }
+
+  text-align: center;
+  clear: left;
+
+  .social-text {
+    margin-bottom: 12px;
+  }
+
+  .social-icon {
+    background-color: $light-blue;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+
+    &:hover {
+      background-color: $dark-blue;
+      @include hover-transition;
+    }
+  }
+
+  .linkedin {
+    background-image: url('images/social-linkedin.png');
+  }
+
+  .github {
+    background-image: url('images/social-github.png');
+  }
+
+  .facebook {
+    background-image: url('images/social-facebook.png');
+  }
+
+  .twitter {
+    background-image: url('images/social-twitter.png');
+  }
+
+  .lastfm {
+    background-image: url('images/social-lastfm.png');
+  }
+
+  .flickr {
+    background-image: url('images/social-flickr.png');
+  }
+
+  .tumblr {
+    background-image: url('images/social-tumblr.png');
+  }
+}

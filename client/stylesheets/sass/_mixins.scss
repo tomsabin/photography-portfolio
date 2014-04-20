@@ -14,12 +14,28 @@
   opacity: 0.75;
 }
 
+@mixin opacity-25 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+  filter: alpha(opacity=25);
+  -khtml-opacity: 0.25;
+  -moz-opacity:0.25;
+  opacity: 0.25;
+}
+
 @mixin opacity-0 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
   -moz-opacity:0;
   opacity: 0;
+}
+
+@mixin hover-transition {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 @mixin background-cover {

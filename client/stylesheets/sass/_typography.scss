@@ -1,6 +1,67 @@
-a, a:active, a:visited, a:hover {
-  text-decoration: none;
+h1 {
+  font-size: $base-font-size * 3;
+
+  @include media($medium-breakpoint) {
+    font-size: $base-font-size * 3.75;
+  }
+
+  @include media($large-breakpoint) {
+    font-size: $base-font-size * 4.5;
+  }
 }
+
+h2 {
+  font-size: $base-font-size * 1.5;
+  line-height: $base-line-height;
+
+  @include media($medium-breakpoint) {
+    font-size: $base-font-size * 1.75;
+  }
+
+  @include media($large-breakpoint) {
+    font-size: $base-font-size * 2;
+  }
+}
+
+p {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h2,
+p {
+  font-family: $base-font-family;
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: $dark-blue;
+  text-decoration: none;
+  border-bottom: 1px dotted $dark-blue;
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-family: $title-font-family;
+  font-weight: 200;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.introduction,
+.website-introduction {
+  text-align: center;
+}
+
 
 .photo-title {
   color: white;

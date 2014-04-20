@@ -1,3 +1,21 @@
+.page-title {
+  margin: 40px 0;
+}
+
+.introduction {
+  margin: 0 40px;
+  @include media($medium-breakpoint) {
+    margin: 0 80px;
+  }
+}
+
+.website-introduction {
+  margin: 0 60px;
+  @include media($medium-breakpoint) {
+    margin: 0 120px;
+  }
+}
+
 .photos {
   .photo-container {
     background-color: $light-blue;
@@ -58,3 +76,23 @@
     padding: 8px 0;
   }
 }
+
+.load-more {
+  background-color: $light-blue;
+  margin-bottom: 40px;
+  padding: 12px;
+
+  font-family: $load-more-font-family;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-blue;
+
+  &:hover {
+    background-color: $dark-blue;
+    @include hover-transition;
+    color: white;
+  }
+}
+
