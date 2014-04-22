@@ -6,9 +6,6 @@
     "iron-router": {
       "tag": "v0.7.1"
     },
-    "iron-router-progress": {
-      "tag": "v0.3.1"
-    },
     "scss": {
       "tag": "v0.8.4"
     },
