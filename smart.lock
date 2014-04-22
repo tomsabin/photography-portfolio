@@ -3,21 +3,16 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "iron-router-progress": {},
       "scss": {},
       "bourbon": {},
-      "neat": {}
+      "neat": {},
+      "spin": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
-      },
-      "iron-router-progress": {
-        "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.3.1",
-        "commit": "3f7900feb4bb70a1289b39a1fdcd1f438c0335b3"
       },
       "scss": {
         "git": "https://github.com/fourseven/meteor-scss.git",
@@ -33,6 +28,11 @@
         "git": "https://github.com/chicagogrooves/meteor-neat.git",
         "tag": "v1.5.0",
         "commit": "6c318cce1c02e822d6a340c547273b29b6379197"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

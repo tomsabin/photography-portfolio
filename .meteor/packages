@@ -5,6 +5,6 @@
 
 standard-app-packages
 iron-router
-iron-router-progress
 bourbon
 neat
+spin
