@@ -1,3 +1,5 @@
 .meteor/local
 .meteor/meteorite
 .sass-cache
+.ruby-version
+.ruby-gemset
