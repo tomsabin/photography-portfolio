@@ -32,18 +32,26 @@ body {
 }
 
 .section:before {
-  @extend .full-width;
-  content: "";
   @include opacity-25;
+  width: 90%;
+  clear: left;
+  display: block;
+  content: "";
   border-bottom: 1px dashed $dark-blue;
 
-  margin: 60px 40px;
+  margin: 60px auto;
+
   @include media($medium-breakpoint) {
-    margin: 70px 20px;
+    margin: 70px auto;
   }
+
   @include media($large-breakpoint) {
-    margin: 80px 0;
+    margin: 80px auto;
   }
+}
+
+.clear-left {
+  clear: left;
 }
 
 .social-container {
