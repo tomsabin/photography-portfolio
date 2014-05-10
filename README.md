@@ -1,9 +1,23 @@
-photography-portfolio
+[tomsabin.co.uk](http://tomsabin.co.uk) - photography portfolio
 =====================
 
-[tomsabin.co.uk](http://tomsabin.co.uk) - photography portfolio
+![Screenshot](https://dl.dropboxusercontent.com/u/2217931/tomsabin-screenshot.png)
 
-### Starting the server locally with a defined MongoDB
+Read more about the project creation on the [UBXD:IO blog](http://www.unboxedconsulting.com/blog/innovation-days-developing-in-meteor).
+
+---
+
+### Dependencies and packages
+
+- [flickr-fetch](https://github.com/tomsabin/flickr-fetch): Used to populate the database with photos from a given Flickr photoset ID.
+- [iron-router](https://github.com/EventedMind/iron-router)
+- [iron-router-progress](https://github.com/Multiply/iron-router-progress/)
+- scss, bourbon, neat (see following section)
+
+---
+
+### Local Development
+#### Starting the server locally with a defined MongoDB
 
 1) Start MongoDB
 
@@ -15,16 +29,7 @@ photography-portfolio
 
 3) Go to `http://localhost:3000`
 
----
-
-### Dependencies and packages
-
-- [flickr-fetch](https://github.com/tomsabin/flickr-fetch): Used to populate the database with photos from a given Flickr photoset ID.
-- [iron-router](https://github.com/EventedMind/iron-router)
-- [iron-router-progress](https://github.com/Multiply/iron-router-progress/)
-- scss, bourbon, neat (see following section)
-
-### Compiling SASS with Compass
+#### Compiling SASS with Compass
 
 Using [Bourbon Neat](http://neat.bourbon.io/) for grid framework, [SASS](http://sass-lang.com/) for le CSS and [Compass](http://compass-style.org/) to compile it all. Phew.
 
@@ -32,7 +37,7 @@ Using [Bourbon Neat](http://neat.bourbon.io/) for grid framework, [SASS](http://
 
 2) Then `cd` to the root of the project and run `compass compile` or `compass watch`
 
-### Deploying
+#### Deploying
 
 1) Ensure `MONGO_URL`, `ROOT_URL` and `BUILDPACK_URL` are set when deploying for the first time:
 
