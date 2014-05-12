@@ -1,6 +1,10 @@
+@font-face {
+  font-family: 'Alice';
+  src: url('fonts/Alice-Regular.ttf');
+}
 $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.15;
-$base-font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman';
+$base-font-family: 'Alice', serif;
 $title-font-family: 'Helvetica Neue', 'Helvetica', 'Helvetica', 'Arial', sans-serif;
 $load-more-font-family: $title-font-family;
 
